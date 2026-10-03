@@ -49,7 +49,7 @@ export default function ProjectVanthenda() {
         description="A digital platform connecting customers with milk suppliers, featuring subscriptions, real-time routing, and auto-debit payments."
         keywords="Vanthenda Paalkaran, milk delivery app, logistics software, subscription payments, AI routing, mobile app development, VDEV"
         url="https://vdev.ai/builds/vanthenda-paalkaran"
-        image="/vandendapaalkaran.png"
+        image="/assets/images/vandendapaalkaran.png"
         schema={{
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
@@ -95,7 +95,7 @@ export default function ProjectVanthenda() {
           </div>
 
           <motion.div variants={fadeUp} className="w-full bg-[#050505] border border-white/10 relative overflow-hidden rounded-sm">
-            <img src="/vandendapaalkaran.png" alt="Vanthenda Paalkaran Project" className="w-full h-auto opacity-90 block" />
+            <img src="/assets/images/vandendapaalkaran.png" alt="Vanthenda Paalkaran Project" className="w-full h-auto opacity-90 block" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#020202] via-transparent to-transparent opacity-80 pointer-events-none" />
           </motion.div>
         </motion.section>
@@ -228,7 +228,7 @@ export default function ProjectVanthenda() {
             </div>
           </motion.div>
           <motion.div variants={fadeUp} className="aspect-square bg-gradient-to-br from-[#111] to-[#050505] border border-white/10 flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/bg-earth.png')] bg-cover bg-center opacity-20 mix-blend-lighten" />
+            <div className="absolute inset-0 bg-[url('/assets/images/bg-earth.png')] bg-cover bg-center opacity-20 mix-blend-lighten" />
             <Bot className="w-24 h-24 text-vdev-gold opacity-50 relative z-10" strokeWidth={0.5} />
           </motion.div>
         </motion.section>

@@ -32,7 +32,7 @@ export function Navigation() {
         }`}
       >
         <a href="/" className="flex items-center gap-4 cursor-pointer group" onClick={() => setIsMobileMenuOpen(false)}>
-          <img src="/vdevicon.png" alt="VDEV Logo" className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-500" />
+          <img src="/assets/icons/vdevicon.png" alt="VDEV Logo" className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-500" />
           <span className="font-mono text-xs md:text-sm tracking-[0.3em] font-bold text-white uppercase">VDEV</span>
         </a>
 

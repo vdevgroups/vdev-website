@@ -53,7 +53,7 @@ export default function Home() {
         description="VDEV is a builder-driven technology community from India creating AI, software and digital products for real-world problems and businesses worldwide."
         keywords="VDEV, software development India, AI development India, AI product development India, custom software development India, custom software development UAE, software development Malaysia"
         url="https://vdev.ai"
-        image="/vdevpost.png"
+        image="/assets/images/vdevpost.png"
         schema={{
           "@context": "https://schema.org",
           "@graph": [
@@ -75,7 +75,7 @@ export default function Home() {
               "url": "https://vdev.ai/",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://vdev.ai/vdevfav.png",
+                "url": "https://vdev.ai/assets/icons/vdevfav.png",
                 "width": 512,
                 "height": 512
               },
@@ -97,7 +97,7 @@ export default function Home() {
               "@id": "https://vdev.ai/#service",
               "name": "VDEV Engineering",
               "url": "https://vdev.ai/",
-              "image": "https://vdev.ai/vdevpost.png",
+              "image": "https://vdev.ai/assets/images/vdevpost.png",
               "address": {
                 "@type": "PostalAddress",
                 "addressRegion": "Tamil Nadu",
@@ -110,7 +110,7 @@ export default function Home() {
       />
       {/* Cinematic Image Background - Fades out dynamically to reveal the 3D globe below */}
       <div 
-        className="fixed inset-0 z-0 bg-[url('/bg-earth.png')] bg-cover bg-center bg-no-repeat pointer-events-none transition-opacity duration-150" 
+        className="fixed inset-0 z-0 bg-[url('/assets/images/bg-earth.png')] bg-cover bg-center bg-no-repeat pointer-events-none transition-opacity duration-150" 
         style={{ opacity: bgOpacity }} 
       />
       {/* Gradient to smoothly transition into the dark content sections below */}

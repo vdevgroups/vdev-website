@@ -9,7 +9,7 @@ interface SEOProps {
   schema?: Record<string, any>;
 }
 
-export function SEO({ title, description, keywords, url = 'https://vdev.ai', image = '/vdevpost.png', schema }: SEOProps) {
+export function SEO({ title, description, keywords, url = 'https://vdev.ai', image = '/assets/images/vdevpost.png', schema }: SEOProps) {
   return (
     <Helmet>
       {/* Primary Meta Tags */}

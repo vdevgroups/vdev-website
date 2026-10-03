@@ -267,9 +267,9 @@ export default function Overlay() {
                       < div className = "grid grid-cols-1 md:grid-cols-3 gap-6" >
                       {
                         [
-                        { id: '001', slug: '/builds/vanthenda-paalkaran', title: 'Vanthenda Paalkaran', tags: ['Mobile App', 'Payments', 'Real World'], desc: 'A digital platform connecting customers with milk suppliers, with subscriptions and auto-debit options.', image: '/vandendapaalkaran.png' },
-                        { id: '002', slug: '/builds/vishrea-studio', title: 'Vishrea Studio', tags: ['E-commerce', 'AI', 'Fashion'], desc: 'An e-commerce experience combining fashion discovery, personalized recommendations and a foundation for AI-powered shopping.', image: '/vishreastudio.png' },
-                        { id: '003', slug: '#', title: 'CLASSIFIED BUILD', tags: ['Encrypted', 'In Development'], desc: 'A revolutionary digital product currently under active development. Details restricted until launch.', image: '/vdevpost.png', locked: true }
+                        { id: '001', slug: '/builds/vanthenda-paalkaran', title: 'Vanthenda Paalkaran', tags: ['Mobile App', 'Payments', 'Real World'], desc: 'A digital platform connecting customers with milk suppliers, with subscriptions and auto-debit options.', image: '/assets/images/vandendapaalkaran.png' },
+                        { id: '002', slug: '/builds/vishrea-studio', title: 'Vishrea Studio', tags: ['E-commerce', 'AI', 'Fashion'], desc: 'An e-commerce experience combining fashion discovery, personalized recommendations and a foundation for AI-powered shopping.', image: '/assets/images/vishreastudio.png' },
+                        { id: '003', slug: '#', title: 'CLASSIFIED BUILD', tags: ['Encrypted', 'In Development'], desc: 'A revolutionary digital product currently under active development. Details restricted until launch.', image: '/assets/images/vdevpost.png', locked: true }
                         ].map((build, i) => (
                           <motion.div key= { i } variants = { fadeUp } className = "group border border-white/10 bg-[#050505] overflow-hidden" >
                           <a href={ build.slug } className = {`block ${build.locked ? 'cursor-not-allowed opacity-80' : ''}`} onClick = {(e) => build.locked && e.preventDefault()}>

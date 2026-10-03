@@ -59,9 +59,9 @@ export default function Builds() {
 
         <motion.section initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
           {[
-            { id: '001', slug: '/builds/vanthenda-paalkaran', title: 'Vanthenda Paalkaran', tags: ['Mobile App', 'Payments'], desc: 'Digital platform connecting customers with milk suppliers.', image: '/vandendapaalkaran.png' },
-            { id: '002', slug: '/builds/vishrea-studio', title: 'Vishrea Studio', tags: ['E-commerce', 'AI'], desc: 'AI-powered fashion discovery platform.', image: '/vishreastudio.png' },
-            { id: '003', slug: '#', title: 'CLASSIFIED BUILD', tags: ['Encrypted'], desc: 'Details restricted until launch.', image: '/vdevpost.png', locked: true }
+            { id: '001', slug: '/builds/vanthenda-paalkaran', title: 'Vanthenda Paalkaran', tags: ['Mobile App', 'Payments'], desc: 'Digital platform connecting customers with milk suppliers.', image: '/assets/images/vandendapaalkaran.png' },
+            { id: '002', slug: '/builds/vishrea-studio', title: 'Vishrea Studio', tags: ['E-commerce', 'AI'], desc: 'AI-powered fashion discovery platform.', image: '/assets/images/vishreastudio.png' },
+            { id: '003', slug: '#', title: 'CLASSIFIED BUILD', tags: ['Encrypted'], desc: 'Details restricted until launch.', image: '/assets/images/vdevpost.png', locked: true }
           ].map((build, i) => (
             <motion.div key={i} variants={fadeUp} className="group border border-white/10 bg-[#050505] overflow-hidden">
               <a href={build.slug} className={`block ${build.locked ? 'cursor-not-allowed opacity-80' : ''}`} onClick={(e) => build.locked && e.preventDefault()}>

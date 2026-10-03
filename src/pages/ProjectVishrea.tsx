@@ -46,7 +46,7 @@ export default function ProjectVishrea() {
         description="A scalable fashion e-commerce experience combining personalized recommendations and a foundation for AI-powered shopping."
         keywords="Vishrea Studio, fashion e-commerce, AI shopping, VDEV, generative e-commerce, AI storefront, Razorpay integration"
         url="https://vdev.ai/builds/vishrea-studio"
-        image="/vishreastudio.png"
+        image="/assets/images/vishreastudio.png"
         schema={{
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
@@ -97,7 +97,7 @@ export default function ProjectVishrea() {
           </div>
 
           <motion.div variants={fadeUp} className="w-full bg-[#050505] border border-white/10 relative overflow-hidden rounded-sm">
-            <img src="/vishreastudio.png" alt="Vishrea Studio Project" className="w-full h-auto opacity-90 block" />
+            <img src="/assets/images/vishreastudio.png" alt="Vishrea Studio Project" className="w-full h-auto opacity-90 block" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#020202] via-transparent to-transparent opacity-80 pointer-events-none" />
           </motion.div>
         </motion.section>
@@ -200,12 +200,12 @@ export default function ProjectVishrea() {
                 </div>
                 <div className="pl-12 grid grid-cols-2 gap-4 mt-4">
                   <div className="aspect-[3/4] bg-[#111] border border-white/10 rounded overflow-hidden relative group">
-                    <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity bg-[url('/vishrea-style-01.png')] bg-cover bg-center" />
+                    <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity bg-[url('/assets/images/vishrea-style-01.png')] bg-cover bg-center" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute bottom-2 left-2 text-[10px] font-mono z-10 font-bold">STYLE 01</div>
                   </div>
                   <div className="aspect-[3/4] bg-[#111] border border-white/10 rounded overflow-hidden relative group">
-                    <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity bg-[url('/vishrea-style-02.png')] bg-cover bg-center" />
+                    <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity bg-[url('/assets/images/vishrea-style-02.png')] bg-cover bg-center" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute bottom-2 left-2 text-[10px] font-mono z-10 font-bold">STYLE 02</div>
                   </div>

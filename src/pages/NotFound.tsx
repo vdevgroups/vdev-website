@@ -21,7 +21,7 @@ export default function NotFound() {
       </div>
       
       {/* Dark glitchy background effect */}
-      <div className="absolute inset-0 z-0 opacity-20 bg-[url('/vdevpost.png')] bg-cover bg-center mix-blend-overlay"></div>
+      <div className="absolute inset-0 z-0 opacity-20 bg-[url('/assets/images/vdevpost.png')] bg-cover bg-center mix-blend-overlay"></div>
     </div>
   )
 }
