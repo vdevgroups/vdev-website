@@ -16,9 +16,10 @@ export function Cursor() {
     // Disable on mobile/touch devices
     if (window.matchMedia('(pointer: coarse)').matches) return
 
-    setIsVisible(true)
+    // Initialize visibility outside the effect or let the first movement trigger it
 
     const updateMousePosition = (e: MouseEvent) => {
+      setIsVisible(true)
       setMousePosition({ x: e.clientX, y: e.clientY })
       
       // Add trail

@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Environment, Lightformer, Sparkles } from '@react-three/drei'
 import * as THREE from 'three'
@@ -19,8 +19,7 @@ function CinematicEarth() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const linePositions = useRef(new Float32Array(0))
-  if (linePositions.current.length === 0) {
+  const linePositions = useMemo(() => {
     const points = []
     const radius = 10.1
     for (let i = 0; i < 200; i++) {
@@ -38,8 +37,8 @@ function CinematicEarth() {
 
       points.push(x1, y1, z1, x2, y2, z2)
     }
-    linePositions.current = new Float32Array(points)
-  }
+    return new Float32Array(points)
+  }, [])
 
   useFrame((state) => {
     if (!earthRef.current || !networkRef.current) return
@@ -75,13 +74,13 @@ function CinematicEarth() {
       <group ref={networkRef} position={[0, -30, 0]}>
         <lineSegments>
           <bufferGeometry>
-            <bufferAttribute attach="attributes-position" args={[linePositions.current, 3]} />
+            <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
           </bufferGeometry>
           <lineBasicMaterial color="#cca560" transparent opacity={0.3} />
         </lineSegments>
         <points>
           <bufferGeometry>
-            <bufferAttribute attach="attributes-position" args={[linePositions.current, 3]} />
+            <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
           </bufferGeometry>
           <pointsMaterial size={0.08} color="#cca560" transparent opacity={0.8} />
         </points>

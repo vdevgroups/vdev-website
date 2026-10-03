@@ -26,7 +26,8 @@ export function DigitalInfrastructure() {
   const scroll = useScroll()
 
   // Generate architectural pillars and network lines
-  const { linePositions } = useMemo(() => {
+  const { linePositions, dustParticles } = useMemo(() => {
+    const dust = new Float32Array(Array.from({length: 3000}, () => (Math.random() - 0.5) * 100))
     const lines = []
     
     // Create a deep grid/tunnel effect
@@ -49,7 +50,8 @@ export function DigitalInfrastructure() {
     }
 
     return {
-      linePositions: new Float32Array(lines)
+      linePositions: new Float32Array(lines),
+      dustParticles
     }
   }, [])
 
@@ -109,7 +111,7 @@ export function DigitalInfrastructure() {
         <bufferGeometry>
           <bufferAttribute 
             attach="attributes-position" 
-            args={[new Float32Array(Array.from({length: 3000}, () => (Math.random() - 0.5) * 100)), 3]} 
+            args={[dustParticles, 3]} 
           />
         </bufferGeometry>
         <pointsMaterial size={0.05} color="#cca560" transparent opacity={0.4} sizeAttenuation />
