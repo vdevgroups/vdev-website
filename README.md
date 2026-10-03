@@ -6,7 +6,7 @@
 
 VDEV is a cutting-edge software engineering and technology architecture firm. This repository contains the source code for the official VDEV corporate platform (**vdev.ai**), including its interactive WebGL frontend and secure signal processing backend.
 
-## 🏗 System Architecture
+## System Architecture
 
 This repository operates as a **Monorepo** containing both the client-side application and the server-side infrastructure:
 
@@ -17,7 +17,7 @@ This repository operates as a **Monorepo** containing both the client-side appli
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 To run the full VDEV platform locally, you must run both the frontend development server and the backend API server concurrently.
 
@@ -61,7 +61,7 @@ node server.js
 
 ---
 
-## 🌐 Production Deployment (Render)
+## Production Deployment (Render)
 
 This platform is engineered to be deployed as a **Full-Stack Web Service on Render**, combining the static frontend build and the dynamic backend into a single robust container.
 
@@ -77,7 +77,7 @@ This platform is engineered to be deployed as a **Full-Stack Web Service on Rend
 
 ---
 
-## 🔐 API Documentation
+## API Documentation
 
 The backend exposes a secure REST API located in `server.js`.
 
@@ -92,7 +92,7 @@ Returns a JSON array of all stored signals.
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 vdev-web/
