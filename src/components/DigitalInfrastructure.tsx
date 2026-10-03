@@ -51,7 +51,7 @@ export function DigitalInfrastructure() {
 
     return {
       linePositions: new Float32Array(lines),
-      dustParticles
+      dustParticles: dust
     }
   }, [])
 
