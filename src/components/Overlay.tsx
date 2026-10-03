@@ -275,7 +275,7 @@ export default function Overlay() {
                           <a href={ build.slug } className = {`block ${build.locked ? 'cursor-not-allowed opacity-80' : ''}`} onClick = {(e) => build.locked && e.preventDefault()}>
                             {/* Image Placeholder */ }
                             < div className = "h-64 bg-[#111] relative overflow-hidden border-b border-white/10" >
-                              <div className={ `absolute inset-0 opacity-40 transition-opacity duration-700 bg-cover bg-center ${build.locked ? 'blur-sm grayscale opacity-20 group-hover:opacity-30' : 'group-hover:opacity-100 group-hover:scale-105'}` } style = {{ backgroundImage: `url('${build.image}')` }} />
+                              <div className={ `absolute inset-0 opacity-40 transition-opacity duration-700 bg-contain bg-no-repeat bg-center ${build.locked ? 'blur-sm grayscale opacity-20 group-hover:opacity-30' : 'group-hover:opacity-100 group-hover:scale-105'}` } style = {{ backgroundImage: `url('${build.image}')` }} />
 
 {
   build.locked && (

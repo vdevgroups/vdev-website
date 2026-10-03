@@ -66,7 +66,7 @@ export default function Builds() {
             <motion.div key={i} variants={fadeUp} className="group border border-white/10 bg-[#050505] overflow-hidden">
               <a href={build.slug} className={`block ${build.locked ? 'cursor-not-allowed opacity-80' : ''}`} onClick={(e) => build.locked && e.preventDefault()}>
                 <div className="h-80 bg-[#111] relative overflow-hidden border-b border-white/10">
-                  <div className={`absolute inset-0 opacity-40 transition-opacity duration-700 bg-cover bg-center ${build.locked ? 'blur-sm grayscale opacity-20' : 'group-hover:opacity-100 group-hover:scale-105'}`} style={{ backgroundImage: `url('${build.image}')` }} />
+                  <div className={`absolute inset-0 opacity-40 transition-opacity duration-700 bg-contain bg-no-repeat bg-center ${build.locked ? 'blur-sm grayscale opacity-20' : 'group-hover:opacity-100 group-hover:scale-105'}`} style={{ backgroundImage: `url('${build.image}')` }} />
                   {build.locked && <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px]"><Lock className="w-8 h-8 text-white/20" /></div>}
                   <div className="absolute top-4 right-4 text-xs font-mono text-vdev-gold bg-black/60 px-2 py-1 rounded backdrop-blur-sm">BUILD {build.id}</div>
                 </div>
