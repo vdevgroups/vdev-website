@@ -1,16 +1,16 @@
 import { useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { Navigation } from '../components/Navigation'
 import { SEO } from '../components/SEO'
 import { ArrowLeft, ArrowRight, Lock } from 'lucide-react'
 import Lenis from '@studio-freight/lenis'
 
-const fadeUp: any = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] } }
 }
 
-const stagger: any = {
+const stagger: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
 }

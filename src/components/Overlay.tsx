@@ -1,15 +1,15 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { motion, useInView, AnimatePresence, type Variants } from 'framer-motion'
 import { ArrowRight, Globe2, Cpu, Database, Blocks, Layers, Bot, Terminal, TestTube, Workflow, MonitorPlay, Mail, Phone, Lock, X, Activity, Code2, Mic, Network } from 'lucide-react'
 import { OfferBadge } from './OfferBadge'
 import { openConsultation } from './ConsultationModal'
 
-const fadeUp: any = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] } }
 }
 
-const stagger: any = {
+const stagger: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
 }
