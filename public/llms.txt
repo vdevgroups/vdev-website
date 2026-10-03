@@ -1,0 +1,31 @@
+# VDEV
+
+> Made of code. Driven by curiosity.
+
+VDEV is a builder-driven technology community from India creating software, AI products, and digital solutions for real-world problems and businesses worldwide.
+Global Identity: Built in India. Solving for the world.
+Current Client Markets: India, UAE, Malaysia.
+
+## Navigation
+- [Home](https://vdev.ai/)
+- [About](https://vdev.ai/about)
+- [Services](https://vdev.ai/services)
+- [Builds](https://vdev.ai/builds)
+- [Labs](https://vdev.ai/labs)
+- [Community](https://vdev.ai/network)
+- [Contact](https://vdev.ai/contact)
+
+## Services
+- AI & Agent Engineering
+- Web & Software Engineering
+- Business Tools & Automation
+- E-commerce Platforms
+- Product Development
+
+## Featured Builds
+- Vanthenda Paalkaran (Mobile App, Payments)
+- Vishrea Studio (E-commerce, AI)
+
+## Contact
+Email: vdevgroups@gmail.com
+Phone: +91-93456-71593

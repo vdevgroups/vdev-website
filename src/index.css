@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vdev-black: #050505;
+  --color-vdev-graphite: #121212;
+  --color-vdev-charcoal: #1a1a1a;
+  --color-vdev-gold: #cca560;
+  --color-vdev-gold-glow: rgba(204, 165, 96, 0.5);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', 'Inter', monospace;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #f0f0f0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Hide scrollbar for immersive feel */
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f0dfa8 0%, #cca560 50%, #8a6729 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-panel {
+  background: rgba(18, 18, 18, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vdev-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
